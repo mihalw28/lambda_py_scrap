@@ -24,9 +24,13 @@ The main issue wasn't working in my purpose was incompability of headless-chromi
 * Chromedriver 2.37
 * Headless Chromium v1.0.0-39
 
-and for lambda function:
-
-[requirements.txt]()
+and for lambda function from requirements.txt:
+```
+boto3==1.9.106
+botocore==1.12.107
+selenium==3.14.1
+chromedriver-install==0.2
+```
 
 
 ## Credits:
