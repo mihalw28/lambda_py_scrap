@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  lambda:
+    build: .
+    environment:
+      - PYTHONPATH=/var/task/src:/var/task/lib
+      - PATH=/var/task/bin
+      - AWS_BUCKET_NAME=<Your-AWS-S3-bucket>
+      - AWS_ACCESS_KEY_ID=<your-access-key>
+      - AWS_SECRET_ACCESS_KEY=<your-aws-secret-key>
+    volumes:
+      - ./src/:/var/task/src/
