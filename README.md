@@ -1,20 +1,18 @@
 # lambda_py_scrap
-AWS Lambda web scrapper package with Headless Chrome and Selenium for Python
+AWS Lambda web scrapper package with Headless Chrome and Selenium for Python.
 
 
 lambda_py_scrap allows to automate actions to webpages from AWS Lambda service. This lambda package is a part of the bigger app created
-for signing up users for gym classes and interacting with them via sms.
+for signing-up users for gym classes and interacting with them via sms.
 
 
 ## Working
 
-To scrape webpage AWS Lambda function needs a browser working in headless mode and selenium to interact with it. Definitely the major part
-of work was done by 21Buttons team creating their PyChromless. The next stage was accomplished by Roberto Rocha which has been described in
-this blog post. The last remaining part was just fits lambda to my requirements.
+To scrape webpage AWS Lambda function needs a browser working in headless mode and selenium to interact with it. Definitely the major part of work has been done by 21Buttons team creating their PyChromless. The next stage has been accomplished by Roberto Rocha and described in this blog post. The last remaining part was just to fit lambda to my requirements.
 
 To make working lambda function for above purposes, please visit pages from credits. There is no need to rewrite well written codes.
 
-The main issue wasn't working in my purpose was incompability of headless-chromium and chrome driver.
+The main reason lambda wasn't working in my purpose was incompatibility of headless-chromium and chrome driver.
 
 
 ## Requirements for current package version:
@@ -26,15 +24,24 @@ The main issue wasn't working in my purpose was incompability of headless-chromi
 
 and for lambda function from requirements.txt:
 ```
-boto3==1.9.106
-botocore==1.12.107
+boto3==1.9.106  # interact with S3
+botocore==1.12.107  # same as above
 selenium==3.14.1
 chromedriver-install==0.2
 ```
-
+## How to start?
+1. Clone repository:
+```
+git clone https://github.com/mihalw28/lambda_py_scrap.git
+```
+2. Navigate into lambda_py_scrap, add lib and bin folders to avoid some errors during building a zip package (MS Windows only) 
+```
+$ cd lambda_py_scrap
+$ mkdir bin lib
+```
+3. Next steps are the same like in Roberto's solution
 
 ## Credits:
 
 * [Jairo](https://github.com/jairovadillo), Pere and [Ricard](https://github.com/ricardfp) - [21Buttons](https://github.com/21Buttons/pychromeless) and their great PyChromless.
-* [Roberto Rocha](https://github.com/robroc) and his interpretation of PyChromless from 21Buttons. 
-(If you are interested in datavis and storytelling, please take a look at Roterto's website.)
+* [Roberto Rocha](https://robertorocha.info/setting-up-a-selenium-web-scraper-on-aws-lambda-with-python/) and his interpretation of PyChromless from 21Buttons.
