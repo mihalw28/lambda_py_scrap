@@ -45,3 +45,8 @@ $ mkdir bin lib
 
 * [Jairo](https://github.com/jairovadillo), Pere and [Ricard](https://github.com/ricardfp) - [21Buttons](https://github.com/21Buttons/pychromeless) and their great PyChromless.
 * [Roberto Rocha](https://robertorocha.info/setting-up-a-selenium-web-scraper-on-aws-lambda-with-python/) and his interpretation of PyChromless from 21Buttons.
+
+
+### License:
+
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT) [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/fold_left.svg?style=social&label=%20%40mihalw28)](https://twitter.com/mihalw28)
