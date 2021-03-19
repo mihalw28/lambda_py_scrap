@@ -8,11 +8,11 @@ for signing-up users for gym classes and interacting with them via sms.
 
 ## Working
 
-To scrape webpage AWS Lambda function needs a browser working in headless mode and selenium to interact with it. Definitely the major part of work has been done by 21Buttons team creating their PyChromless. The next stage has been accomplished by Roberto Rocha and described in this blog post. The last remaining part was just to fit lambda to my requirements.
+To scrape a webpage AWS Lambda function needs a browser working in a headless mode and selenium to interact with it. Definitely the major part of the job has been done by 21Buttons team by creating their PyChromless. The next stage has been accomplished by Roberto Rocha and it's been described in this blog post. The last remaining part was just to prepare lambda to pass my requirements.
 
-To make working lambda function for above purposes, please visit pages from credits. There is no need to rewrite well written codes.
+To make lambda function working for above purposes, please visit pages from credits. There is no need to rewrite well written code.
 
-The main reason lambda wasn't working in my purpose was incompatibility of headless-chromium and chrome driver.
+The main reason lambda wasn't working for my purpose was an incompatibility of headless-chromium and chrome driver.
 
 
 ## Requirements for current package version:
@@ -39,7 +39,7 @@ git clone https://github.com/mihalw28/lambda_py_scrap.git
 $ cd lambda_py_scrap
 $ mkdir bin lib
 ```
-3. Next steps are the same like in Roberto's solution
+3. Next steps are the same like those in Roberto's solution
 
 ## Credits:
 
